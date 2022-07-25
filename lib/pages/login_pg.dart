@@ -20,9 +20,7 @@ class LoginPg extends StatelessWidget {
             ),
             const Text(
               "Welcome",
-              style: TextStyle(
-                fontSize: 22,
-              ),
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
             Padding(
               padding:
@@ -36,18 +34,16 @@ class LoginPg extends StatelessWidget {
                     obscureText: true,
                     decoration: InputDecoration(hintText: "password"),
                   ),
-
                   const SizedBox(
-              height: 20,
-            ),
-
-            ElevatedButton(onPressed: () {
-              print("hie")
-            },
-               child: Text("login"),
-              style: TextButton.styleFrom() ,
-              
-             ),
+                    height: 20.0,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      print("hie");
+                    },
+                    child: Text("login"),
+                    style: TextButton.styleFrom(),
+                  ),
                 ],
               ),
             ),
